@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="71445c43-3687-43f2-88f4-68d49afa33cc" name="Default Changelist" comment="" />
+    <list default="true" id="71445c43-3687-43f2-88f4-68d49afa33cc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilmController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Film.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Film.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_16_202419_create_films_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_16_202419_create_films_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/films.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/films.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +22,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -124,6 +139,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iyKXvOkceGHNGaaTcP3EIcBCRp" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -132,15 +148,29 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shualeduri" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp1\htdocs\task1\resources\views" />
+      <recent name="C:\xampp1\htdocs\task1\resources\views\layout\User" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.TestMiddleware.php">
+    <configuration name="TestMiddleware.php" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/task1/Http/Middleware/TestMiddleware.php" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.TestMiddleware.php" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -152,6 +182,13 @@
       <updated>1602874434509</updated>
       <workItem from="1602874435531" duration="16734000" />
       <workItem from="1602929958150" duration="16666000" />
+      <workItem from="1603380638951" duration="7347000" />
+      <workItem from="1603537491093" duration="5911000" />
+      <workItem from="1604739574164" duration="9980000" />
+      <workItem from="1605351883704" duration="1720000" />
+      <workItem from="1605814936761" duration="2809000" />
+      <workItem from="1605819078782" duration="2332000" />
+      <workItem from="1605896021965" duration="10533000" />
     </task>
     <servers />
   </component>
@@ -163,6 +200,30 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1032" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602879709354" />
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605905008071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605905008071" />
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1604747277832">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604747277832" />
+    <state width="874" height="279" key="GridCell.Tab.0.bottom" timestamp="1605821199749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="874" height="279" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605821199749" />
+    <state width="874" height="279" key="GridCell.Tab.0.center" timestamp="1605821199749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="874" height="279" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605821199749" />
+    <state width="874" height="279" key="GridCell.Tab.0.left" timestamp="1605821199749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="874" height="279" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605821199749" />
+    <state width="874" height="279" key="GridCell.Tab.0.right" timestamp="1605821199749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="874" height="279" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605821199749" />
     <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1602879710953">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -175,5 +236,19 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1170" y="328" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602881248753" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/layout/layout.blade.php</url>
+          <line>12</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/task1$TestMiddleware_php.dat" NAME="TestMiddleware.php Coverage Results" MODIFIED="1605821200063" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="WipCoverageRunner" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

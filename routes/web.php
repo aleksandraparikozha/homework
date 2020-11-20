@@ -13,21 +13,41 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/login', [\App\http\Controllers\LoginController::class, 'login'])->name('login');
+
+Route::post('/films/post_login', [\App\http\Controllers\LoginController::class, 'postLogin'])->name('post.login');
+
+Route::get("/users/create", [\App\http\Controllers\LoginController::class, 'user_create'] )->name('user_create');
+
+Route::post('/users/save_user', [\App\http\Controllers\FilmController::class, 'save_user'])->name('save_user');
 
 
-Route::get("/films", [\App\http\Controllers\FilmController::class, 'index'] );
+
+Route::middleware('auth')->group(function (){
+
+Route::get("/films", [\App\http\Controllers\FilmController::class, 'index'] )->name('films');
 
 Route::get("/films/create", [\App\http\Controllers\FilmController::class, 'create'] )->name('films.create');
 
-Route::get('/films/{id}', [\App\http\Controllers\FilmController::class, 'show']);
+Route::get('/films/{film}', [\App\http\Controllers\FilmController::class, 'show'])->name('films.show');
 
 Route::post('/films/save_film', [\App\http\Controllers\FilmController::class, 'save'])->name('films.save');
 
-Route::delete('/films/{id}/delete', [\App\http\Controllers\FilmController::class, 'delete'])->name('films.delete');
+Route::delete('/films/{film}/delete', [\App\http\Controllers\FilmController::class, 'delete'])->name('films.delete');
 
-Route::get("/films/{id}/edit", [\App\http\Controllers\FilmController::class, 'edit'] )->name('films.edit');
+Route::get("/films/{film}/edit", [\App\http\Controllers\FilmController::class, 'edit'] )->name('films.edit');
 
-Route::put('/films/{id}/update', [\App\http\Controllers\FilmController::class, 'update'])->name('films.update');
+Route::put('/films/{film}/update', [\App\http\Controllers\FilmController::class, 'update'])->name('films.update');
+
+
+Route::post('/films/logout', [\App\http\Controllers\LoginController::class, 'logout'])->name('logout');
+
+
+});

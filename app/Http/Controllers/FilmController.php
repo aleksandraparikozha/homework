@@ -17,18 +17,25 @@ class FilmController extends Controller
 
 
     }
-    public function show($id){
-        $film = Film::findOrfail($id);
+    public function show(Film $film){
 
         return view('film')->with('film', $film);
     }
 
     public function create(){
+
+
         return view('create');
+
+
     }
 
     public function save(Request $request){
-
+        \request()->validate([
+            'title' => 'required|min:2|unique:films',
+            'director' => 'required',
+            'rate' => 'required',
+        ]);
 
         $film = new Film($request->all());
 
@@ -40,24 +47,24 @@ class FilmController extends Controller
 
     }
 
-    public function edit($filmId){
+    public function edit(Film  $film){
 
-        return view('edit')->with('filmId', $filmId);
+        return view('edit')->with('film', $film);
 
     }
-    public function update(Request $request, $filmId){
-        $film = Film::findOrfail($filmId);
+
+
+    public function update(Request $request, Film $film){
 
         $film->update($request->all());
 
-
+        return redirect()->route('films');
 
 
 
     }
 
-    public function delete($id){
-        $film = Film::findOrfail($id);
+    public function delete(Film $film){
 
         $film->delete();
 

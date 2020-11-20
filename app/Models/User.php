@@ -40,4 +40,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    /**
+     * @var mixed|string
+     */
+    private $password;
+
+    public function films(){
+
+        return $this->hasMany(Film::class);
+    }
 }
