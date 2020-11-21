@@ -72,14 +72,21 @@
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                             {{$film->director}}
                             {{$film->rate}}<br>
-                            {{$film->user_id}}
+                            @foreach($users as $user)
+                            @if($film->user_id==$user->id)
+                                {{$user->name}}
+                                @endif
+                            @endforeach
+
+
+
                         </div>
                     </div>
                 </div>
 
-
                     </div>
             @endforeach
+
                 </div>
             </div>
         </div>

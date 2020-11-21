@@ -18,7 +18,7 @@ class LoginController extends Controller
         $credentials = $request->except(['_token']);
 
         if (Auth::attempt($credentials)) {
-            return redirect()->route('home');
+            return redirect()->route('my_films');
 
         } else {
             abort(403);
@@ -40,14 +40,14 @@ class LoginController extends Controller
     public function save_user(Request $request){
 
         $user = new User($request->all());
-
+        $user['password']=bcrypt('password123');
         $user->save();
 
         return redirect()->back();
 
 
 
-//        $password = bcrypt('password123');
+//
 //
 
     }

@@ -26,11 +26,13 @@ Route::post('/films/post_login', [\App\http\Controllers\LoginController::class, 
 
 Route::get("/users/create", [\App\http\Controllers\LoginController::class, 'user_create'] )->name('user_create');
 
-Route::post('/users/save_user', [\App\http\Controllers\FilmController::class, 'save_user'])->name('save_user');
+Route::post('/users/save_user', [\App\http\Controllers\LoginController::class, 'save_user'])->name('user.save');
 
 
 
 Route::middleware('auth')->group(function (){
+
+Route::get("/my_films", [\App\http\Controllers\FilmController::class, 'user_films'] )->name('my_films');
 
 Route::get("/films", [\App\http\Controllers\FilmController::class, 'index'] )->name('films');
 

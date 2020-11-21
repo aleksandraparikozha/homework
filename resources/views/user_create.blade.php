@@ -9,7 +9,7 @@
         {{--            <li>{{$error}}</li>--}}
         {{--        @endforeach--}}
         {{--        @endif--}}
-        <form method='post' action="{{route('films.save')}}"  enctype="multipart/form-data" >
+        <form method='post' action="{{route('user.save')}}"  enctype="multipart/form-data" >
 
             <div class="container">
                 <h1>Sign up</h1>

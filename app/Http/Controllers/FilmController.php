@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Models\Film;
 use Illuminate\Support\Facades\DB;
@@ -12,8 +13,9 @@ class FilmController extends Controller
 {
     public function index(){
         $films = Film::all();
+        $users = User::all();
 
-        return view('films')->with('films', $films);
+        return view('films')->with('films', $films)->with('users', $users);
 
 
     }
@@ -36,12 +38,11 @@ class FilmController extends Controller
             'director' => 'required',
             'rate' => 'required',
         ]);
-
+        $user = auth()->user();
         $film = new Film($request->all());
-
+        $film['user_id']=$user->id;
 
         $film->save();
-
         return redirect()->back();
 
 
@@ -69,6 +70,14 @@ class FilmController extends Controller
         $film->delete();
 
         return redirect()->back();
+
+
+    }
+    public function user_films(){
+        $films = Film::all();
+        $users = User::all();
+
+        return view('my_films')->with('films', $films)->with('users', $users);
 
 
     }
