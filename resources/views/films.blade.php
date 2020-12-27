@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+{{--    <meta name="csrf-token" content="{{ csrf_token() }}">--}}
     <title>Laravel</title>
 
     <!-- Fonts -->
@@ -65,17 +68,26 @@
                                 @csrf
                                 @method('DELETE')
                                 <button type='submit' class="fa fa-trash-o"></button>
-                             </form></div>
+                             </form>
+{{--                            <form method="post" action="{{route('approve', $film->id)}}">--}}
+{{--                                @csrf--}}
+{{--                                <button type='submit' class="fa fa-thumbs-up"></button>--}}
+{{--                            </form>--}}
                     </div>
-
+                        @can('approve', $film)
+<div class="ml-4 text-lg leading-7 font-semibold">
+    <a type="submit" class="fa fa-thumbs-up btn-approve" url="{{route('approve', $film->id)}}"></a>
+</div>
+                        @endcan
                     <div class="ml-12">
                         <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
                             {{$film->director}}
-                            {{$film->rate}}<br>
+                            {{$film->rate}}</div><br>
                             @foreach($users as $user)
                             @if($film->user_id==$user->id)
                                 {{$user->name}}
                                 @endif
+
                             @endforeach
 
 
@@ -118,5 +130,28 @@
         </div>
     </div>
 </div>
+
+
+
 </body>
+<script type="text/javascript">
+    $(document).ready(function (){
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $(document).on('click', '.btn-approve', function (e){
+            e.preventDefault();
+            $this = $(this);
+            $.ajax({
+                type: 'DELETE',
+                url:$this.attr('url'),
+                success: function (xhr){
+                    $this.removeClass('fa-thumbs-up');
+                    $this.addClass('fa-check');
+                }
+            })})},
+
+</script>
 </html>

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Notifications\PostApproveNotification;
 use Illuminate\Http\Request;
 use App\Models\Film;
 use Illuminate\Support\Facades\DB;
@@ -14,10 +15,22 @@ class FilmController extends Controller
     public function index(){
         $films = Film::all();
         $users = User::all();
+        $notifications = DB::table('notifications')->get();
 
-        return view('films')->with('films', $films)->with('users', $users);
+        return view('films')->with('films', $films)->with('users', $users)->with('notifications', $notifications);
 
 
+    }
+    public function approve(Film $film){
+        $this->authorize('approve', $film);
+        $film->is_approved = true;
+        $film->save();
+        return redirect()->route('films');
+//
+//        $user = User::find();
+//        $user->notify(new PostApproveNotification());
+//
+//        return response('ok', 200);
     }
     public function show(Film $film){
 

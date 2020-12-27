@@ -53,3 +53,8 @@ Route::post('/films/logout', [\App\http\Controllers\LoginController::class, 'log
 
 
 });
+Route::get("/mails/create", [\App\http\Controllers\MailController::class, 'create'] )->name('mails.create');
+
+Route::post('/mails/send', [\App\http\Controllers\MailController::class, 'send'])->name('mails.send');
+
+Route::post('/films/{film}/approve', [\App\http\Controllers\FilmController::class, 'approve'])->name('approve');

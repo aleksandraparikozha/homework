@@ -20,12 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71445c43-3687-43f2-88f4-68d49afa33cc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/mail.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/d5318757-521a-49d6-9ff2-0d6d5aea1a43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/d5318757-521a-49d6-9ff2-0d6d5aea1a43.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FilmController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FilmController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/films.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/films.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/myposts.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/my_films.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user_create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +162,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shualeduri" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shualeduri2" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -204,7 +204,12 @@
       <workItem from="1605819078782" duration="2332000" />
       <workItem from="1605896021965" duration="10533000" />
       <workItem from="1605975664311" duration="5743000" />
-      <workItem from="1605983637334" duration="2015000" />
+      <workItem from="1605983637334" duration="4076000" />
+      <workItem from="1608568292595" duration="2225000" />
+      <workItem from="1608743259405" duration="274000" />
+      <workItem from="1608754464961" duration="5557000" />
+      <workItem from="1608830802953" duration="14942000" />
+      <workItem from="1608917082194" duration="119000" />
     </task>
     <servers />
   </component>
@@ -232,10 +237,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="275" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605905008071" />
-    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1604747277832">
+    <state x="1220" y="275" key="FileChooserDialogImpl" timestamp="1608917195426">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604747277832" />
+    <state x="1220" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1608917195426" />
     <state width="874" height="279" key="GridCell.Tab.0.bottom" timestamp="1605821199749">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +261,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1602879710953" />
+    <state x="1264" y="243" key="NewPhpClassDialog" timestamp="1608831100843">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1264" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1608831100843" />
     <state x="1274" y="443" key="NewPhpFileDialog" timestamp="1602876010811">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

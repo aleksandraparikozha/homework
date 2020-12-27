@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Film;
+use App\Models\User;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Gate;
 
@@ -25,6 +27,10 @@ class AuthServiceProvider extends ServiceProvider
     {
         $this->registerPolicies();
 
-        //
+
+
+//        Gate::define('approve', function (User $user, Film $film){
+//            return $film->user()->is($user);
+//        });
     }
 }
